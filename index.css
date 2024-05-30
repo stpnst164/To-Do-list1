@@ -1,0 +1,49 @@
+.container{
+    max-width: 1900px;
+    min-width: 600px;
+    margin: 10;
+    padding: 10;
+}
+
+.loader {
+    width: 75px;
+    height: 75px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    border-left-color: rgb(189, 147, 228);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: 2s spin infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+.tasks-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.todo {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #000000;
+}
